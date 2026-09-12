@@ -255,14 +255,14 @@ ul.clean{list-style:none;margin:0;padding:0}
 .card{padding:34px 34px 30px;max-width:520px;width:100%}
 .card h3{margin:0 0 8px;font-size:20px;font-weight:520;letter-spacing:var(--tr-head)}
 .card p{margin:0 0 20px;font-size:14px;color:var(--ink-2);line-height:1.6}
-.field{margin-bottom:14px}
-.field label{display:block;font-size:11.5px;color:var(--ink-3);
+.fld{margin-bottom:14px}
+.fld label{display:block;font-size:11.5px;color:var(--ink-3);
   letter-spacing:var(--tr-label);margin-bottom:6px}
-.field input{width:100%;font:inherit;font-size:14px;color:var(--ink);
+.fld input{width:100%;font:inherit;font-size:14px;color:var(--ink);
   background:rgba(255,255,255,.10);border:1px solid var(--edge);border-radius:12px;
   padding:11px 13px;outline:none}
-.field input:focus{border-color:var(--jade);background:rgba(255,255,255,.16)}
-html[data-theme="light"] .field input{background:rgba(255,255,255,.6);color:var(--ink)}
+.fld input:focus{border-color:var(--jade);background:rgba(255,255,255,.16)}
+html[data-theme="light"] .fld input{background:rgba(255,255,255,.6);color:var(--ink)}
 .btn{font:inherit;font-size:14px;font-weight:520;padding:11px 20px;border-radius:12px;
   cursor:pointer;border:1px solid var(--edge);background:rgba(255,255,255,.14);color:var(--ink)}
 .btn.go{background:var(--jade);border-color:transparent;color:#04231B;font-weight:560}
@@ -322,10 +322,10 @@ html[data-theme="light"] .field input{background:rgba(255,255,255,.6);color:var(
     <p>This board holds nothing itself. It reads the PHF&nbsp;Management sheet each time
        you open it. The address and secret word stay on this device only — enter them
        once, here, on each phone that should see this.</p>
-    <div class="field"><label>Web app address</label>
+    <div class="fld"><label>Web app address</label>
       <input id="inurl" type="url" spellcheck="false" autocomplete="off"
              placeholder="https://script.google.com/macros/s/…/exec"></div>
-    <div class="field"><label>Secret word</label>
+    <div class="fld"><label>Secret word</label>
       <input id="inkey" type="password" autocomplete="off" placeholder="the word you set in the script"></div>
     <div class="btnrow"><button class="btn go" id="go">Connect</button></div>
     <div class="err" id="cerr"></div>
@@ -470,7 +470,7 @@ html[data-theme="light"] .field input{background:rgba(255,255,255,.6);color:var(
    public gives nobody anything.
    ------------------------------------------------------------------ */
 
-var VERSION = 'v2 · 12 Sep 2026';
+var VERSION = 'v3 · 12 Sep 2026';
 var KEY = 'phf_mgmt_api';
 var DATA = null;
 
